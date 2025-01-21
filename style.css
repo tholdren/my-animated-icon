@@ -1,7 +1,7 @@
 /* Diagnostic Styling */
-* {
+/* * {
   outline: 2px dotted gray;
-} 
+}  */
 
 /* temp background color */
 body {
@@ -13,4 +13,35 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-family: 'Roboto', sans-serif;
+
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+}
+
+svg {
+  width: 400px;
+  height: 400px;
+
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+
+  transition: transform 2s;
+  transform-origin: center center ;
+}
+
+svg :active {
+  animation: shrinkWidth 0.2s forwards;
+}
+
+@keyframes shrinkWidth {
+  to {
+    transform: scaleX(0.01);
+  }
 }
