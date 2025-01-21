@@ -32,12 +32,12 @@ svg {
   animation-name: fadeInUp;
   animation-duration: 1s;
 
-  transition: transform 2s;
+  transition: transform .2s;
   transform-origin: center center ;
 }
 
 svg :active {
-  animation: shrinkWidth 0.2s forwards;
+  animation: shrinkWidth 0.4s forwards;
 }
 
 @keyframes shrinkWidth {
