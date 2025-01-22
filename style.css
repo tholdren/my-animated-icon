@@ -48,7 +48,7 @@ svg {
 }
 
 .icon-container:active .squishy-icon {
-  transform: scaleX(0.01); /* Compress width to 50% */
+  transform: scaleX(0.05); /* Compress width to 50% */
 }
 
 /* svg :active {
