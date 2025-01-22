@@ -32,11 +32,26 @@ svg {
   animation-name: fadeInUp;
   animation-duration: 1s;
 
-  transition: transform .2s;
-  transform-origin: center center ;
+  /* transition: transform .2s;
+  transform-origin: center center ; */
+
 }
 
-svg :active {
+.icon-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.squishy-icon {
+  transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1); /* Smooth animation */
+  transform-origin: center; /* Transform around the center point */
+}
+
+.icon-container:active .squishy-icon {
+  transform: scaleX(0.01); /* Compress width to 50% */
+}
+
+/* svg :active {
   animation: shrinkWidth 0.4s forwards;
 }
 
@@ -44,4 +59,4 @@ svg :active {
   to {
     transform: scaleX(0.01);
   }
-}
+} */
